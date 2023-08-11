@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <script
+      src="https://kit.fontawesome.com/201e436313.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-transparent my-5 px-5">
+      <div class="container-fluid">
+        <div class="d-flex logo">
+          <img src="img/logo@2x.png" alt="" />
+          <div class="d-flex flex-column logo-content p-0">
+            <a class="navbar-brand px-2" href="#">Weather</a>
+            <a class="navbar-brand px-2 outer" href="#">tagline goes here</a>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="photo position-relative">
+      <div class="container">
+        <input
+          type="text"
+          id="searchCity"
+          placeholder="Find your location..."
+          class="w-100 rounded-pill dark-color border-0 p-3 my-5"
+          onkeyup="getCityWeather(this.value)"
+        />
+
+        .
+      </div>
+      <div class="weather-table text-white position-absolute w-100">
+        <div class="container">
+          <div class="weather">
+            <div
+              class="row d-flex justify-content-center align-items-center h-100"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center text-lg-start py-5">
+      <div class="footer-box text-center">
+        <ul
+          class="list-unstyled text-white-50 d-flex gap-3 justify-content-center"
+        >
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-linkedin-in"></i></li>
+          <li><i class="fa-brands fa-pinterest"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+        </ul>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center text-white p-3">
+        Copyright 2014 Company name. Designed by Themezy. All rights reserved
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- End of .container -->
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

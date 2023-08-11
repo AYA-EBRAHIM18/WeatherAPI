@@ -1,0 +1,56 @@
+.dark-color {
+  background-color: #1e202b;
+}
+body {
+  background-color: #1e202b;
+}
+.navbar a {
+  color: white;
+}
+.navbar-nav .nav-item {
+  padding-left: 40px;
+}
+.logo img {
+  width: 70px;
+  height: 50px;
+}
+.logo-content a {
+  font-size: 16px;
+}
+.logo-content .outer {
+  font-size: 12px;
+}
+.photo {
+  background-image: url(../img/banner.png);
+  width: 100%;
+  height: 300px;
+  margin-bottom: 300px;
+}
+
+.forecast {
+  background-color: #2d303d;
+}
+
+.weather-table {
+  top: 50%;
+}
+
+footer {
+  background-color: #262936;
+}
+.footer-box ul li {
+  background-color: #1e202b;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-box ul li i {
+  color: #009ad8;
+}
